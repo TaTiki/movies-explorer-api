@@ -18,7 +18,9 @@ mongodb запускается на порту 27017, а сервер запус
 в базовом каталоге необходим файл .env
 со следующими переменными окружения
 ```
-DB=mongodb://mongodb:27017/moviesdb                                                                                                                                                                                                             NODE_ENV=production                                                                                                                                                                                                                             JWT_SECRET=<some-secret-key>
+DB=mongodb://mongodb:27017/moviesdb
+NODE_ENV=production
+JWT_SECRET=<some-secret-key>
 ```
 Команда в консоли:
 ```
