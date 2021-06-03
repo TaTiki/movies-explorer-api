@@ -8,7 +8,7 @@ module.exports.createMovie = (req, res, next) => {
   Movie.findOne({ owner: _id, movieId })
     .then((movie) => {
       if (movie) {
-        return Promise.reject(new MovieError(409, 'movie already exists for that user'));
+        return Promise.reject(new MovieError(409, 'Этот фильм уже есть в каталоге'));
       }
       return movie;
     })
